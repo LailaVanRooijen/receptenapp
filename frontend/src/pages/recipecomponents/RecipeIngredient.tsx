@@ -30,7 +30,7 @@ const RecipeIngredient = ({ recipeIngredientId, handleRefresh }) => {
   };
 
   return (
-    <div className="flex flex-row justify-between items-center border-b-2 border-primary p-2 text-tertiary text-xl font-bold">
+    <div className="flex flex-row justify-between items-center border-b-2 border-primary p-2 text-tertiary text-md font-bold">
       {data && (
         <>
           <div className="flex flex-row">

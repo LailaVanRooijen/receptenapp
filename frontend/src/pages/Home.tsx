@@ -3,7 +3,7 @@ import Hi from "../assets/img/hi.png";
 const Home = () => {
   const p_style = "my-6 text-center w-2/3";
   return (
-    <div className="flex flex-col justify-center items-center p-24">
+    <div className="flex flex-col justify-center items-center p-24 font-michroma">
       <div className="flex justify-center items-end">
         <img src={Hi} className="w-24" />
         <h1 className="text-xl font-bold">Welcome toTaste Buds!</h1>

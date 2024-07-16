@@ -2,7 +2,7 @@ import AddNewRecipe from "./recipecomponents/AddNewRecipe";
 
 const AddRecipePage = () => {
   return (
-    <div>
+    <div className="font-michroma">
       <AddNewRecipe />
     </div>
   );

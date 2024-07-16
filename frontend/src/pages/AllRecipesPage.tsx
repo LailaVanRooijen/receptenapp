@@ -7,7 +7,7 @@ const AllRecipesPage = () => {
     "http://localhost:8080/api/v1/recipes"
   );
   return (
-    <>
+    <div className="font-michroma">
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error.message}</p>}
       {data && (
@@ -23,7 +23,7 @@ const AllRecipesPage = () => {
           ))}
         </ul>
       )}
-    </>
+    </div>
   );
 };
 

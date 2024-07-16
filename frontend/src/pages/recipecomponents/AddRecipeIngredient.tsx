@@ -84,11 +84,7 @@ const AddRecipeIngredient = () => {
           />
         )}
 
-        <Button
-          handleClick={handlePostIngredient}
-          content={"Add to recipe"}
-          style={"w-36"}
-        />
+        <Button handleClick={handlePostIngredient} content={"Add to recipe"} />
       </div>
       <AddNewIngredient refresh={handleRefresh} />
       <div className="flex flex-col w-full p-12 ">

@@ -1,5 +1,5 @@
 const IngredientPage = () => {
-  return <div>ingredient page</div>;
+  return <div className="font-michroma">ingredient page</div>;
 };
 
 export default IngredientPage;

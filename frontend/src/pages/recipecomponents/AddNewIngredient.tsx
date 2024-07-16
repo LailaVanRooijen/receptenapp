@@ -14,6 +14,7 @@ const AddNewIngredient = ({ refresh }) => {
         name: name.toLowerCase(),
         unit: unit.toLowerCase(),
       })
+
       .then(() => {
         refresh();
         setName("");

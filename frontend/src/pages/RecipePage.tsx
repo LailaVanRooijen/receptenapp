@@ -9,9 +9,11 @@ const RecipePage = () => {
   );
   return (
     <>
-      {loading && <p>Loading...</p>}
-      {error && <p>Error: {error.message}</p>}
-      {data && <Recipe recipe={data} layoutStyle={""} />}
+      <div className="font-michroma">
+        {loading && <p>Loading...</p>}
+        {error && <p>Error: {error.message}</p>}
+        {data && <Recipe recipe={data} layoutStyle={""} />}
+      </div>
     </>
   );
 };

@@ -13,10 +13,10 @@ const Recipe = ({ recipe, layoutStyle }) => {
       }}
     >
       <h6 className="text-xl font-bold p-2 text-secondary capitalize border-b-2 border-tertiary">
-        {recipe.name} name
+        {recipe.name}
       </h6>
       <p className="p-2 text-secondary font-bold text-md border-b-2 border-tertiary">
-        {recipe.description} description
+        {recipe.description}
       </p>
       <h5 className="text-md font-bold p-2">Ingredients</h5>
       <Ingredients key={recipe.id} ingredients={recipe.recipeIngredients} />

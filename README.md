@@ -1,7 +1,14 @@
 wip
 
 # receptenapp
- 
-![receptenapp](https://github.com/user-attachments/assets/f13dd62e-57a8-4717-bfae-d9645d8e991d)
-![receptenapp2](https://github.com/user-attachments/assets/88088dad-7958-4fe6-bc4e-7d9c4d884be1)
-![receptenapp3](https://github.com/user-attachments/assets/568bccfe-338b-4525-8504-409cd71826ec)
+
+#### Home page
+![demo1](https://github.com/user-attachments/assets/82efd18f-5009-4fa7-a5e0-509ca283ad3e)
+#### Add an ingredient
+![demo2](https://github.com/user-attachments/assets/4226b054-6870-4106-a4fd-9ceb42d7a8cc)
+#### Add a recipe
+![demo3](https://github.com/user-attachments/assets/aa507e1a-185a-4d13-b648-335e5130f6b1)
+#### View a recipe
+![demo4](https://github.com/user-attachments/assets/3fe64f9c-bdb4-4858-8092-1ab2d1a5a9c8)
+#### View all recipes
+![demo5](https://github.com/user-attachments/assets/6f05fd46-75e3-4a13-91d0-464139eaed6b)

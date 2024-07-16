@@ -18,7 +18,11 @@ public class Ingredient {
     @Setter
     String name;
 
-    public Ingredient(String name) {
+    @Setter
+    String unit;
+
+    public Ingredient(String name, String unit) {
         this.name = name;
+        this.unit = unit;
     }
 }

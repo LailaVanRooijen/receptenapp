@@ -28,8 +28,8 @@ public class RecipeController {
     }
 
     @PostMapping
-    public ResponseEntity<Recipe> create(@RequestBody Recipe recipe) {
-        Recipe saved = recipeService.create(recipe);
+    public ResponseEntity<Recipe> create(@RequestBody PostRecipeDTO recipeDTO) {
+        Recipe saved = recipeService.create(recipeDTO);
         URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(saved.getId()).toUri();
         return ResponseEntity.created(location).body(saved);
     }

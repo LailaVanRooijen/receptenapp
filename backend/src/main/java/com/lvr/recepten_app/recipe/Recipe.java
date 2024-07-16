@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -29,6 +30,7 @@ public class Recipe {
     @OneToMany
     private final Set<RecipeIngredient> recipeIngredients = new HashSet<>();
 
+
     public void addIngredients(Set<RecipeIngredient> newRecipeIngredients) {
         this.recipeIngredients.addAll(newRecipeIngredients);
     }
@@ -41,8 +43,9 @@ public class Recipe {
         this.recipeIngredients.clear();
     }
 
-    public Recipe(String description, String name) {
+    public Recipe(String description, String name, List<RecipeIngredient> ingredients) {
         this.description = description;
         this.name = name;
+        this.recipeIngredients.addAll(ingredients);
     }
 }

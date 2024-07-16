@@ -17,7 +17,7 @@ const AllRecipesPage = () => {
               key={recipe.id}
               recipe={recipe}
               layoutStyle={
-                "col-span-1 cursor-pointer border-2 rounded shadow-md"
+                "col-span-1 cursor-pointer border-2 rounded shadow-md border-2"
               }
             />
           ))}

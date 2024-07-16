@@ -2,7 +2,9 @@ package com.lvr.recepten_app;
 
 import com.lvr.recepten_app.ingredient.Ingredient;
 import com.lvr.recepten_app.ingredient.IngredientService;
+import com.lvr.recepten_app.recipe.Recipe;
 import com.lvr.recepten_app.recipe.RecipeService;
+import com.lvr.recepten_app.recipeingredient.RecipeIngredient;
 import com.lvr.recepten_app.recipeingredient.RecipeIngredientService;
 import lombok.AllArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
@@ -25,15 +27,15 @@ public class Seeder implements CommandLineRunner {
     }
 
     private void seedIngredients() {
-        ingredientService.create(new Ingredient("tomato"));
-        ingredientService.create(new Ingredient("pasta"));
-        ingredientService.create(new Ingredient("ground beef"));
-        ingredientService.create(new Ingredient("gochugaru"));
-        ingredientService.create(new Ingredient("mint"));
-        ingredientService.create(new Ingredient("parmigiano reggiano"));
-        ingredientService.create(new Ingredient("rice"));
-        ingredientService.create(new Ingredient("chicken"));
-        ingredientService.create(new Ingredient("broccoli"));
+        ingredientService.create(new Ingredient("tomato", "pieces"));
+        ingredientService.create(new Ingredient("pasta", "grams"));
+        ingredientService.create(new Ingredient("ground beef", "grams"));
+        ingredientService.create(new Ingredient("gochugaru", "grams"));
+        ingredientService.create(new Ingredient("mint", "grams"));
+        ingredientService.create(new Ingredient("parmigiano reggiano", "grams"));
+        ingredientService.create(new Ingredient("rice", "grams"));
+        ingredientService.create(new Ingredient("chicken", "grams"));
+        ingredientService.create(new Ingredient("broccoli", "grams"));
     }
 
     private void seedRecipeIngredients() {
@@ -42,8 +44,8 @@ public class Seeder implements CommandLineRunner {
     }
 
     private void seedRecipes() {
-        System.out.println("to do this one!");
-
+        List<RecipeIngredient> ingredients = recipeIngredientService.getRecipeIngredients();
+        recipeService.create(new Recipe("Delicious food", "amazing", ingredients));
     }
 }
 

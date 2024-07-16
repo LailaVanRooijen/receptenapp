@@ -11,12 +11,7 @@ const RecipePage = () => {
     <>
       {loading && <p>Loading...</p>}
       {error && <p>Error: {error.message}</p>}
-      {data && (
-        <Recipe
-          recipe={data}
-          layoutStyle={"flex flex-col h-screen items-center"}
-        />
-      )}
+      {data && <Recipe recipe={data} layoutStyle={""} />}
     </>
   );
 };
